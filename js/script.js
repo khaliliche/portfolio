@@ -46,3 +46,37 @@ if (heroVisual && !prefersReducedMotion) {
     });
   });
 }
+// Submit contact form via fetch (no page redirect)
+const contactForm = document.getElementById('contact-form');
+const formStatus = document.getElementById('form-status');
+
+if (contactForm) {
+  contactForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const submitBtn = contactForm.querySelector('.terminal-submit');
+    submitBtn.disabled = true;
+    formStatus.textContent = '> sending...';
+    formStatus.classList.remove('error');
+
+    try {
+      const response = await fetch(contactForm.action, {
+        method: 'POST',
+        body: new FormData(contactForm),
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (response.ok) {
+        formStatus.textContent = '> message sent. I\'ll get back to you soon.';
+        contactForm.reset();
+      } else {
+        formStatus.textContent = '> something went wrong, try again or email me directly.';
+        formStatus.classList.add('error');
+      }
+    } catch (err) {
+      formStatus.textContent = '> network error, try again or email me directly.';
+      formStatus.classList.add('error');
+    } finally {
+      submitBtn.disabled = false;
+    }
+  });
+}

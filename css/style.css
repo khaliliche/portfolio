@@ -781,3 +781,14 @@ section {
   }
   .arrow { display: none; }
 }
+.terminal-status {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  padding: 0 1.5rem 1.2rem;
+  min-height: 1.2rem;
+  color: var(--accent-mint);
+}
+
+.terminal-status.error {
+  color: #e8746b;
+}
