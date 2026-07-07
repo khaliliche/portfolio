@@ -226,7 +226,34 @@
       <p class="section-eyebrow">// contact</p>
       <h2 class="contact-title">On construit un truc ensemble ?</h2>
       <p class="contact-sub">Ouvert aux missions freelance, aux collaborations sur des projets IA, et aux opportunités qui ont du sens.</p>
+<div class="terminal-form">
+        <div class="terminal-header">
+          <div class="terminal-dots">
+            <span></span><span></span><span></span>
+          </div>
+          <span class="terminal-title">new_message.py</span>
+        </div>
 
+        <form action="https://formspree.io/f/xqevjnov" method="POST" class="contact-form">
+          <div class="terminal-line">
+            <span class="prompt">name</span> <span class="arrow">→</span>
+            <input type="text" name="name" placeholder="ton nom" required>
+          </div>
+          <div class="terminal-line">
+            <span class="prompt">email</span> <span class="arrow">→</span>
+            <input type="email" name="email" placeholder="ton@email.com" required>
+          </div>
+          <div class="terminal-line terminal-line-textarea">
+            <span class="prompt">message</span> <span class="arrow">→</span>
+            <textarea name="message" placeholder="qu'est-ce que t'as en tête ?" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="terminal-submit">
+            <span class="terminal-cursor">$</span> send_message()
+          </button>
+        </form>
+      </div>
+
+      <p class="contact-or">— ou en direct —</p>
       <div class="contact-links">
         <a href="mailto:khalilichee@gmail.com" class="contact-link">
           <span class="contact-link-label">Email</span>
