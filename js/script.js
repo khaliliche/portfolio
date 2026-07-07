@@ -23,3 +23,26 @@ const skillObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.3 });
 
 skillBars.forEach(bar => skillObserver.observe(bar));
+// Subtle cursor parallax on hero nodes
+const heroVisual = document.querySelector('.hero-visual');
+const nodes = document.querySelectorAll('.node');
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+if (heroVisual && !prefersReducedMotion) {
+  heroVisual.addEventListener('mousemove', (e) => {
+    const rect = heroVisual.getBoundingClientRect();
+    const x = (e.clientX - rect.left - rect.width / 2) / rect.width;
+    const y = (e.clientY - rect.top - rect.height / 2) / rect.height;
+
+    nodes.forEach((node, i) => {
+      const strength = 12 + i * 3;
+      node.style.transform = `translate(${x * strength}px, ${y * strength}px)`;
+    });
+  });
+
+  heroVisual.addEventListener('mouseleave', () => {
+    nodes.forEach(node => {
+      node.style.transform = '';
+    });
+  });
+}
