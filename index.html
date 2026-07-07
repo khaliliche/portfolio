@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khalil Iche — AI Engineer & Full-Stack Developer</title>
+  <meta name="description" content="Khalil Iche — ingénieur IA & développeur full-stack. RAG, LangGraph, agents IA en français et darija.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="#" class="logo">khalil<span>.iche</span></a>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#stack">Stack</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="https://github.com/khaliliche" target="_blank" class="nav-github">GitHub ↗</a>
+    </div>
+  </header>
+
+  <section class="hero" id="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="hero-eyebrow">Ingénieur IA — EMSI Rabat</p>
+        <h1 class="hero-title">Je transforme des idées en <span>systèmes IA</span> qui parlent Darija.</h1>
+        <p class="hero-sub">Full-stack developer spécialisé en RAG, agents IA et LangGraph. Je construis des produits qui résolvent de vrais problèmes — pas des démos.</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+          <a href="#contact" class="btn btn-ghost">Me contacter</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="orbit-glow"></div>
+        <img src="assets/khalil.jpg" alt="Khalil Iche" class="hero-photo">
+
+        <div class="node node-1"><span>Requête FR / Darija</span></div>
+        <div class="node node-2"><span>Embedding</span></div>
+        <div class="node node-3"><span>LangGraph + RAG</span></div>
+        <div class="node node-4"><span>Réponse</span></div>
+
+        <svg class="orbit-lines" viewBox="0 0 500 500">
+          <circle cx="250" cy="250" r="180" fill="none" stroke="#262B36" stroke-width="1" stroke-dasharray="4 6"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about-inner">
+      <div class="about-text">
+        <p class="section-eyebrow">// about</p>
+        <h2 class="about-title">Je ne construis pas des démos. Je construis des solutions.</h2>
+        <p class="about-body">
+          Ce qui m'attire dans l'IA, c'est simple : je peux prendre un vrai problème et lui donner une solution qui marche. Pas un proof-of-concept qui reste dans un coin — un système qu'on utilise vraiment.
+        </p>
+        <p class="about-body">
+          C'est pour ça que je passe le plus clair de mon temps sur le RAG et les agents IA : c'est le terrain où l'IA arrête d'être une démo et devient un outil. Mon objectif : que des projets comme PharmAssistant tournent un jour en vrai, pour de vraies personnes qui parlent darija — pas seulement en anglais.
+        </p>
+      </div>
+
+      <div class="about-facts">
+        <div class="fact">
+          <span class="fact-label">Basé à</span>
+          <span class="fact-value">Rabat, Maroc</span>
+        </div>
+        <div class="fact">
+          <span class="fact-label">Formation</span>
+          <span class="fact-value">EMSI — Ingénierie, 3e année</span>
+        </div>
+        <div class="fact">
+          <span class="fact-label">Focus</span>
+          <span class="fact-value">RAG · Agents IA · LangGraph</span>
+        </div>
+        <div class="fact">
+          <span class="fact-label">Langues</span>
+          <span class="fact-value">Arabe · Français · Anglais</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- PROJECTS -->
+  <section class="projects" id="projects">
+    <p class="section-eyebrow">// projects</p>
+    <h2 class="section-title">Ce que j'ai construit</h2>
+
+    <div class="project-grid">
+
+      <!-- FEATURED PROJECT -->
+      <article class="project-card project-featured reveal">
+        <div class="project-card-header">
+          <span class="project-badge">Projet phare · En cours (70%)</span>
+          <h3 class="project-name">PharmAssistant</h3>
+        </div>
+        <p class="project-desc">
+          Un assistant IA de triage pharmaceutique pour le marché marocain : tu décris tes symptômes en français ou en darija, il identifie les red flags qui nécessitent un vrai médecin, et recommande le bon médicament avec la posologie.
+        </p>
+        <div class="project-tags">
+          <span class="tag">FastAPI</span>
+          <span class="tag">LangGraph</span>
+          <span class="tag">RAG</span>
+          <span class="tag">Supabase</span>
+          <span class="tag">NVIDIA NIM</span>
+          <span class="tag">Sentence-Transformers</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/khaliliche" target="_blank" class="project-link">Code source ↗</a>
+        </div>
+      </article>
+
+      <!-- SPENDWISE -->
+      <article class="project-card reveal">
+        <div class="project-card-header">
+          <span class="project-badge project-badge-muted">Projet perso</span>
+          <h3 class="project-name">SpendWise</h3>
+        </div>
+        <p class="project-desc">
+          Application de gestion de dépenses personnelles avec un chatbot RAG intégré (MoneyMind) qui répond à des questions sur tes finances en langage naturel.
+        </p>
+        <div class="project-tags">
+          <span class="tag">Django</span>
+          <span class="tag">React</span>
+          <span class="tag">ChromaDB</span>
+          <span class="tag">MariaDB</span>
+          <span class="tag">Groq LLaMA 3.3</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/khaliliche" target="_blank" class="project-link">Code source ↗</a>
+        </div>
+      </article>
+
+      <!-- FORMATECH -->
+      <article class="project-card reveal">
+        <div class="project-card-header">
+          <span class="project-badge project-badge-muted">Projet académique</span>
+          <h3 class="project-name">FormaTech Solutions</h3>
+        </div>
+        <p class="project-desc">
+          Plateforme de gestion des formations en entreprise, avec accès par rôle (Admin, RH, Formateur, Employé) et un premier chatbot RAG intégré.
+        </p>
+        <div class="project-tags">
+          <span class="tag">Django</span>
+          <span class="tag">Python</span>
+          <span class="tag">RAG</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/khaliliche" target="_blank" class="project-link">Code source ↗</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+ <!-- STACK -->
+  <section class="stack" id="stack">
+    <p class="section-eyebrow">// stack</p>
+    <h2 class="section-title">Ce que je maîtrise</h2>
+
+    <div class="stack-grid">
+      <div class="stack-col">
+        <h3 class="stack-col-title">Langages</h3>
+        <div class="skill-bar" style="--pct: 90%"><span class="skill-name">Python</span><div class="skill-track"><div class="skill-fill"></div></div></div>
+        <div class="skill-bar" style="--pct: 90%"><span class="skill-name">C++</span><div class="skill-track"><div class="skill-fill"></div></div></div>
+        <div class="skill-bar" style="--pct: 80%"><span class="skill-name">JavaScript</span><div class="skill-track"><div class="skill-fill"></div></div></div>
+        <div class="skill-bar" style="--pct: 80%"><span class="skill-name">Java</span><div class="skill-track"><div class="skill-fill"></div></div></div>
+        <div class="skill-bar" style="--pct: 80%"><span class="skill-name">SQL</span><div class="skill-track"><div class="skill-fill"></div></div></div>
+        <div class="skill-bar" style="--pct: 70%"><span class="skill-name">C</span><div class="skill-track"><div class="skill-fill"></div></div></div>
+        <div class="skill-bar" style="--pct: 60%"><span class="skill-name">TypeScript</span><div class="skill-track"><div class="skill-fill"></div></div></div>
+      </div>
+
+      <div class="stack-col">
+        <h3 class="stack-col-title">Frameworks & Outils</h3>
+        <div class="skill-bar" style="--pct: 100%"><span class="skill-name">Django</span><div class="skill-track"><div class="skill-fill"></div></div></div>
+        <div class="skill-bar" style="--pct: 80%"><span class="skill-name">FastAPI</span><div class="skill-track"><div class="skill-fill"></div></div></div>
+        <div class="skill-bar" style="--pct: 80%"><span class="skill-name">Node.js</span><div class="skill-track"><div class="skill-fill"></div></div></div>
+        <div class="skill-bar" style="--pct: 70%"><span class="skill-name">Next.js</span><div class="skill-track"><div class="skill-fill"></div></div></div>
+        <div class="skill-bar" style="--pct: 70%"><span class="skill-name">Linux</span><div class="skill-track"><div class="skill-fill"></div></div></div>
+        <div class="skill-bar" style="--pct: 70%"><span class="skill-name">PostgreSQL</span><div class="skill-track"><div class="skill-fill"></div></div></div>
+        <div class="skill-bar" style="--pct: 70%"><span class="skill-name">MongoDB</span><div class="skill-track"><div class="skill-fill"></div></div></div>
+        <div class="skill-bar" style="--pct: 60%"><span class="skill-name">React</span><div class="skill-track"><div class="skill-fill"></div></div></div>
+        <div class="skill-bar" style="--pct: 50%"><span class="skill-name">Flask</span><div class="skill-track"><div class="skill-fill"></div></div></div>
+        <div class="skill-bar" style="--pct: 50%"><span class="skill-name">Git</span><div class="skill-track"><div class="skill-fill"></div></div></div>
+        <div class="skill-bar" style="--pct: 30%"><span class="skill-name">Tailwind</span><div class="skill-track"><div class="skill-fill"></div></div></div>
+      </div>
+
+      <div class="stack-col">
+        <h3 class="stack-col-title">IA & RAG</h3>
+        <div class="ai-tags">
+          <span class="tag tag-mint">LangGraph</span>
+          <span class="tag tag-mint">RAG</span>
+          <span class="tag tag-mint">AI Agents</span>
+          <span class="tag tag-mint">ChromaDB</span>
+          <span class="tag tag-mint">Sentence-Transformers</span>
+          <span class="tag tag-mint">Groq API</span>
+          <span class="tag tag-mint">NVIDIA NIM</span>
+          <span class="tag tag-mint">AI Chatbots</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact-inner">
+      <p class="section-eyebrow">// contact</p>
+      <h2 class="contact-title">On construit un truc ensemble ?</h2>
+      <p class="contact-sub">Ouvert aux missions freelance, aux collaborations sur des projets IA, et aux opportunités qui ont du sens.</p>
+
+      <div class="contact-links">
+        <a href="mailto:khalilichee@gmail.com" class="contact-link">
+          <span class="contact-link-label">Email</span>
+          <span class="contact-link-value">khalilichee@gmail.com</span>
+        </a>
+        <a href="https://www.linkedin.com/in/khalil-iche-32688a358" target="_blank" class="contact-link">
+          <span class="contact-link-label">LinkedIn</span>
+          <span class="contact-link-value">khalil-iche ↗</span>
+        </a>
+        <a href="https://github.com/khaliliche" target="_blank" class="contact-link">
+          <span class="contact-link-label">GitHub</span>
+          <span class="contact-link-value">khaliliche ↗</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 Khalil Iche — Conçu et codé à Rabat.</p>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
